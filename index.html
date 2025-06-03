@@ -5,9 +5,47 @@
     <link rel="icon" type="image/svg+xml" href="/AMARA-CAPS/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AMARA CAP Try-On</title>
+    <style>
+      body, html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        background: #f9f9f9;
+      }
+
+      /* Center and size the logo */
+      .logo {
+        display: block;
+        max-width: 200px;
+        width: 40vw;
+        height: auto;
+        margin-bottom: 1rem;
+      }
+
+      canvas {
+        border: 3px solid black; /* stroke border */
+        display: block;
+        max-width: 90vw;
+        height: auto;
+      }
+
+      .caption {
+        margin-top: 1rem;
+        font-size: 1.25rem;
+        text-align: center;
+        color: #333;
+      }
+    </style>
     <script type="module" crossorigin src="/AMARA-CAPS/assets/index-BpSThatt.js"></script>
   </head>
   <body>
-    <canvas id = "canvas" width="640" height="480"></canvas>
+    <img src="/AMARA-CAPS/AMARACAPSLOGO.png" alt="AMARA CAPS Logo" class="logo" />
+    <canvas id="canvas" width="640" height="480"></canvas>
+    <div class="caption">Black Baseball Cap</div>
+
   </body>
 </html>
